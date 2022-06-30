@@ -167,7 +167,7 @@ alias kgpvw='kgpv --watch'
 alias kepv='kubectl edit pv'
 alias kdpv='kubectl describe pv'
 alias kdelpv='kubectl delete pv'
-alias kdelpvall='kubectl delete pv -all'
+alias kdelpvall='kubectl delete pv --all'
 
 # Service account management.
 alias kgsa="kubectl get sa"
