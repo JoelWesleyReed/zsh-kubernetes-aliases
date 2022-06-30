@@ -158,6 +158,7 @@ alias kgpvcw='kgpvc --watch'
 alias kepvc='kubectl edit pvc'
 alias kdpvc='kubectl describe pvc'
 alias kdelpvc='kubectl delete pvc'
+alias kdelpvcall='kubectl delete pvc --all'
 
 # PV management.
 alias kgpv='kubectl get pv'
@@ -166,6 +167,7 @@ alias kgpvw='kgpv --watch'
 alias kepv='kubectl edit pv'
 alias kdpv='kubectl describe pv'
 alias kdelpv='kubectl delete pv'
+alias kdelpvall='kubectl delete pv -all'
 
 # Service account management.
 alias kgsa="kubectl get sa"
