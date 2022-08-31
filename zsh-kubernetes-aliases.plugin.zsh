@@ -49,6 +49,7 @@ alias kdelp='kubectl delete pods'
 alias kgpl='kgp -l'
 # get pod by namespace: kgpn kube-system"
 alias kgpn='kgp -n'
+alias ktp='kubectl top pod'
 
 # Job management
 alias kgj='kubectl get jobs'
@@ -150,6 +151,7 @@ alias kgno='kubectl get nodes'
 alias keno='kubectl edit node'
 alias kdno='kubectl describe node'
 alias kdelno='kubectl delete node'
+alias ktn='kubectl top node'
 
 # PVC management.
 alias kgpvc='kubectl get pvc'
