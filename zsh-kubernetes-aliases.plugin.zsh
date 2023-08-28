@@ -38,8 +38,8 @@ alias kdelf='kubectl delete -f'
 alias kdelk='kubectl delete -k'
 
 # Pod management.
-alias kgp='kubectl get pods'
-alias kgpa='kubectl get pods --all-namespaces'
+alias -g kgp='kubectl get pods'
+alias -g kgpa='kubectl get pods --all-namespaces'
 alias kgpw='kgp --watch'
 alias kgpwide='kgp -o wide'
 alias kep='kubectl edit pods'
@@ -52,8 +52,8 @@ alias kgpn='kgp -n'
 alias ktp='kubectl top pod'
 
 # Job management
-alias kgj='kubectl get jobs'
-alias kgja='kubectl get jobs --all-namespaces'
+alias -g kgj='kubectl get jobs'
+alias -g kgja='kubectl get jobs --all-namespaces'
 alias kgjw='kgj --watch'
 alias kgjwide='kgj -o wide'
 alias kej='kubectl edit jobs'
@@ -61,8 +61,8 @@ alias kdj='kubectl describe jobs'
 alias kdelj='kubectl delete jobs'
 
 # Service management.
-alias kgs='kubectl get svc'
-alias kgsa='kubectl get svc --all-namespaces'
+alias -g kgs='kubectl get svc'
+alias -g kgsa='kubectl get svc --all-namespaces'
 alias kgsw='kgs --watch'
 alias kgswide='kgs -o wide'
 alias kes='kubectl edit svc'
@@ -70,35 +70,35 @@ alias kds='kubectl describe svc'
 alias kdels='kubectl delete svc'
 
 # Ingress management
-alias kgi='kubectl get ingress'
-alias kgia='kubectl get ingress --all-namespaces'
+alias -g kgi='kubectl get ingress'
+alias -g kgia='kubectl get ingress --all-namespaces'
 alias kei='kubectl edit ingress'
 alias kdi='kubectl describe ingress'
 alias kdeli='kubectl delete ingress'
 
 # Namespace management
-alias kgns='kubectl get namespaces'
+alias -g kgns='kubectl get namespaces'
 alias kens='kubectl edit namespace'
 alias kdns='kubectl describe namespace'
 alias kdelns='kubectl delete namespace'
 alias kcn='kubectl config set-context --current --namespace'
 
 # ConfigMap management
-alias kgcm='kubectl get configmaps'
-alias kgcma='kubectl get configmaps --all-namespaces'
+alias -g kgcm='kubectl get configmaps'
+alias -g kgcma='kubectl get configmaps --all-namespaces'
 alias kecm='kubectl edit configmap'
 alias kdcm='kubectl describe configmap'
 alias kdelcm='kubectl delete configmap'
 
 # Secret management
-alias kgsec='kubectl get secret'
-alias kgseca='kubectl get secret --all-namespaces'
+alias -g kgsec='kubectl get secret'
+alias -g kgseca='kubectl get secret --all-namespaces'
 alias kdsec='kubectl describe secret'
 alias kdelsec='kubectl delete secret'
 
 # Deployment management.
-alias kgd='kubectl get deployment'
-alias kgda='kubectl get deployment --all-namespaces'
+alias -g kgd='kubectl get deployment'
+alias -g kgda='kubectl get deployment --all-namespaces'
 alias kgdw='kgd --watch'
 alias kgdwide='kgd -o wide'
 alias ked='kubectl edit deployment'
@@ -116,8 +116,8 @@ alias krh='kubectl rollout history'
 alias kru='kubectl rollout undo'
 
 # Statefulset management.
-alias kgss='kubectl get statefulset'
-alias kgssa='kubectl get statefulset --all-namespaces'
+alias -g kgss='kubectl get statefulset'
+alias -g kgssa='kubectl get statefulset --all-namespaces'
 alias kgssw='kgss --watch'
 alias kgsswide='kgss -o wide'
 alias kess='kubectl edit statefulset'
@@ -130,8 +130,8 @@ alias krsss='kubectl rollout status statefulset'
 alias kpf="kubectl port-forward"
 
 # Tools for accessing all information
-alias kga='kubectl get all'
-alias kgaa='kubectl get all --all-namespaces'
+alias -g kga='kubectl get all'
+alias -g kgaa='kubectl get all --all-namespaces'
 
 # Logs
 alias kl='kubectl logs'
@@ -147,15 +147,15 @@ alias klf1s='kubectl logs --since 1s -f'
 alias kcp='kubectl cp'
 
 # Node Management
-alias kgno='kubectl get nodes'
+alias -g kgno='kubectl get nodes'
 alias keno='kubectl edit node'
 alias kdno='kubectl describe node'
 alias kdelno='kubectl delete node'
 alias ktn='kubectl top node'
 
 # PVC management.
-alias kgpvc='kubectl get pvc'
-alias kgpvca='kubectl get pvc --all-namespaces'
+alias -g kgpvc='kubectl get pvc'
+alias -g kgpvca='kubectl get pvc --all-namespaces'
 alias kgpvcw='kgpvc --watch'
 alias kepvc='kubectl edit pvc'
 alias kdpvc='kubectl describe pvc'
@@ -163,8 +163,8 @@ alias kdelpvc='kubectl delete pvc'
 alias kdelpvcall='kubectl delete pvc --all'
 
 # PV management.
-alias kgpv='kubectl get pv'
-alias kgpva='kubectl get pv --all-namespaces'
+alias -g kgpv='kubectl get pv'
+alias -g kgpva='kubectl get pv --all-namespaces'
 alias kgpvw='kgpv --watch'
 alias kepv='kubectl edit pv'
 alias kdpv='kubectl describe pv'
@@ -172,19 +172,19 @@ alias kdelpv='kubectl delete pv'
 alias kdelpvall='kubectl delete pv --all'
 
 # Service account management.
-alias kgsa="kubectl get sa"
+alias -g kgsa="kubectl get sa"
 alias kdsa="kubectl describe sa"
 alias kdelsa="kubectl delete sa"
 
 # DaemonSet management.
-alias kgds='kubectl get daemonset'
+alias -g kgds='kubectl get daemonset'
 alias kgdsw='kgds --watch'
 alias keds='kubectl edit daemonset'
 alias kdds='kubectl describe daemonset'
 alias kdelds='kubectl delete daemonset'
 
 # CronJob management.
-alias kgcj='kubectl get cronjob'
+alias -g kgcj='kubectl get cronjob'
 alias kecj='kubectl edit cronjob'
 alias kdcj='kubectl describe cronjob'
 alias kdelcj='kubectl delete cronjob'
